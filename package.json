@@ -12,7 +12,7 @@
   "description": "",
   "main": "index.js",
   "directories": {
-    "test": "tests"
+    "test": "playwright test"
   },
   "keywords": [],
   "author": "",

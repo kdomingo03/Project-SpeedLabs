@@ -7,7 +7,7 @@ export default defineConfig({
   use: {
     baseURL: 'https://www.saucedemo.com/',
     storageState: 'storage/standard_user.json',
-    headless: false, 
+    headless: true, 
 	video: 'on',
   },
   globalSetup: require.resolve('./utils/auth'),

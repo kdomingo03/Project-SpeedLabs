@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "playwright": "^1.58.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.1",
+    "@types/node": "^25.2.0"
+  },
+  "scripts": {},
+  "name": "project-speedlabs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs"
+}

@@ -1,4 +1,4 @@
-import { chromium, FullConfig } from '@playwright/test';
+import { chromium } from '@playwright/test';
 
 async function globalSetup(config: FullConfig) {
   const browser = await chromium.launch();
@@ -10,11 +10,6 @@ async function globalSetup(config: FullConfig) {
       name: 'session-username',
       value: 'standard_user',
       domain: 'www.saucedemo.com',
-      path: '/',
-      expires: -1,
-      httpOnly: false,
-      secure: true,
-      sameSite: 'Lax',
     },
   ]);
 

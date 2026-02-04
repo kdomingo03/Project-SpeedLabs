@@ -1,6 +1,6 @@
 import { chromium } from '@playwright/test';
 
-async function globalSetup(config: FullConfig) {
+async function globalSetup() {
   const browser = await chromium.launch();
   const context = await browser.newContext();
 
@@ -10,6 +10,7 @@ async function globalSetup(config: FullConfig) {
       name: 'session-username',
       value: 'standard_user',
       domain: 'www.saucedemo.com',
+      path: '/',
     },
   ]);
 

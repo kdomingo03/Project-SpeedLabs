@@ -23,8 +23,8 @@ The suite covers:
 
 1. Clone the repository (if using GitHub):
 ```bash
-git clone https://github.com/your-username/sauce-demo-automation.git
-cd sauce-demo-automation
+git clone https://github.com/your-username/project-speedlabs.git
+cd project-speedlabs
 Install dependencies:
 
 npm ci
@@ -32,7 +32,7 @@ Install Playwright browsers:
 
 npx playwright install --with-deps
 Folder Structure
-sauce-demo-automation/
+project-speedlabs/
 ├── package.json
 ├── playwright.config.ts
 ├── storage/

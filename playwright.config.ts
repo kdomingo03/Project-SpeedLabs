@@ -2,13 +2,21 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 30 * 1000, // 30 seconds per test
+  timeout: 30 * 1000,
   retries: 1,
+
+  reporter: [
+    ['html', { outputFolder: 'playwright-report', open: 'never' }],
+  ],
+
   use: {
     baseURL: 'https://www.saucedemo.com/',
     storageState: 'storage/standard_user.json',
-    headless: true, 
-	video: 'on',
+    headless: true,
+    video: 'on',
+    screenshot: 'only-on-failure',
+    trace: 'on-first-retry',
   },
+
   globalSetup: require.resolve('./utils/auth'),
 });
